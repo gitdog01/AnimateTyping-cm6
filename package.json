@@ -1,0 +1,39 @@
+{
+  "name": "animate-typing-cm6",
+  "version": "1.0.0",
+  "description": "A CodeMirror 6 extension that adds typing animations",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build",
+    "example:install": "cd example && npm install",
+    "example:dev": "cd example && npm run dev",
+    "example:build": "cd example && npm run build",
+    "example": "npm run build && npm run example:dev"
+  },
+  "keywords": [
+    "codemirror",
+    "codemirror6",
+    "typing",
+    "animation",
+    "editor",
+    "extension"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@codemirror/state": "^6.0.0",
+    "@codemirror/view": "^6.0.0"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+} 
