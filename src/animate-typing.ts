@@ -111,6 +111,11 @@ export function animateTyping(options: AnimateTypingOptions = {}): Extension {
         animation: `rollingThunder ${options.duration || 500}ms ease-out`,
         display: 'inline-block'
       },
+      '.animate-typing-frenchFries': {
+        animation: `frenchFries ${options.duration || 500}ms ease-out`,
+        display: 'inline-block',
+        position: 'relative'
+      },
       '@keyframes fadeIn': {
         '0%': { opacity: '0' },
         '100%': { opacity: '1' }
@@ -170,6 +175,39 @@ export function animateTyping(options: AnimateTypingOptions = {}): Extension {
         '100%': { 
           transform: 'rotate(360deg)',
           opacity: '1'
+        }
+      },
+      '@keyframes frenchFries': {
+        '0%': { 
+          opacity: '0',
+          transform: 'translateY(0px) rotate(0deg) scale(0.8)',
+          boxShadow: '0 0 0 rgba(255, 215, 0, 0), 0 0 0 rgba(255, 165, 0, 0), 0 0 0 rgba(255, 140, 0, 0), 0 0 0 rgba(218, 165, 32, 0), 0 0 0 rgba(255, 193, 37, 0), 0 0 0 rgba(255, 127, 80, 0), 0 0 0 rgba(255, 185, 15, 0), 0 0 0 rgba(255, 160, 122, 0)'
+        },
+        '15%': { 
+          opacity: '1',
+          transform: 'translateY(-6px) rotate(30deg) scale(1.2)',
+          boxShadow: '3px 3px 0 rgba(255, 215, 0, 1), -3px 3px 0 rgba(255, 165, 0, 1), 0px 6px 0 rgba(255, 140, 0, 1), 2px 2px 0 rgba(218, 165, 32, 1), -2px 4px 0 rgba(255, 193, 37, 1), 1px 5px 0 rgba(255, 127, 80, 1), -1px 3px 0 rgba(255, 185, 15, 1), 3px 4px 0 rgba(255, 160, 122, 1)'
+        },
+        '30%': { 
+          transform: 'translateY(-18px) rotate(75deg) scale(1)',
+          boxShadow: '8px 8px 0 rgba(255, 215, 0, 0.9), -8px 8px 0 rgba(255, 165, 0, 0.9), 0px 16px 0 rgba(255, 140, 0, 0.9), 6px 6px 0 rgba(218, 165, 32, 0.9), -6px 12px 0 rgba(255, 193, 37, 0.9), 3px 14px 0 rgba(255, 127, 80, 0.9), -3px 10px 0 rgba(255, 185, 15, 0.9), 9px 11px 0 rgba(255, 160, 122, 0.9)'
+        },
+        '50%': { 
+          transform: 'translateY(-24px) rotate(120deg) scale(1)',
+          boxShadow: '16px 16px 0 rgba(255, 215, 0, 0.8), -16px 16px 0 rgba(255, 165, 0, 0.8), 0px 28px 0 rgba(255, 140, 0, 0.8), 12px 12px 0 rgba(218, 165, 32, 0.8), -12px 20px 0 rgba(255, 193, 37, 0.8), 6px 24px 0 rgba(255, 127, 80, 0.8), -6px 18px 0 rgba(255, 185, 15, 0.8), 18px 19px 0 rgba(255, 160, 122, 0.8)'
+        },
+        '70%': { 
+          transform: 'translateY(-16px) rotate(180deg) scale(1)',
+          boxShadow: '24px 24px 0 rgba(255, 215, 0, 0.6), -24px 24px 0 rgba(255, 165, 0, 0.6), 0px 36px 0 rgba(255, 140, 0, 0.6), 18px 18px 0 rgba(218, 165, 32, 0.6), -18px 28px 0 rgba(255, 193, 37, 0.6), 9px 32px 0 rgba(255, 127, 80, 0.6), -9px 26px 0 rgba(255, 185, 15, 0.6), 27px 27px 0 rgba(255, 160, 122, 0.6)'
+        },
+        '85%': { 
+          transform: 'translateY(-8px) rotate(225deg) scale(1)',
+          boxShadow: '32px 32px 0 rgba(255, 215, 0, 0.4), -32px 32px 0 rgba(255, 165, 0, 0.4), 0px 44px 0 rgba(255, 140, 0, 0.4), 24px 24px 0 rgba(218, 165, 32, 0.4), -24px 36px 0 rgba(255, 193, 37, 0.4), 12px 40px 0 rgba(255, 127, 80, 0.4), -12px 34px 0 rgba(255, 185, 15, 0.4), 36px 35px 0 rgba(255, 160, 122, 0.4)'
+        },
+        '100%': { 
+          opacity: '1',
+          transform: 'translateY(0px) rotate(270deg) scale(1)',
+          boxShadow: '0 0 0 rgba(255, 215, 0, 0), 0 0 0 rgba(255, 165, 0, 0), 0 0 0 rgba(255, 140, 0, 0), 0 0 0 rgba(218, 165, 32, 0), 0 0 0 rgba(255, 193, 37, 0), 0 0 0 rgba(255, 127, 80, 0), 0 0 0 rgba(255, 185, 15, 0), 0 0 0 rgba(255, 160, 122, 0)'
         }
       }
     })

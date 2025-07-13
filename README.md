@@ -4,7 +4,7 @@ A CodeMirror 6 extension that adds beautiful typing animations to enhance the co
 
 ## Features
 
-- 🎨 **Multiple Animation Types**: Choose from fadeIn, glow, shootingStar, and rollingThunder effects
+- 🎨 **Multiple Animation Types**: Choose from fadeIn, glow, shootingStar, rollingThunder, and frenchFries effects
 - ⚡ **Lightweight**: Minimal performance impact
 - 🔧 **Configurable**: Customize animation duration and style
 - 🎯 **Smart Detection**: Only animates newly typed characters
@@ -43,7 +43,7 @@ interface AnimateTypingOptions {
   duration?: number;
   
   /** Type of animation to use (default: 'fadeIn') */
-  animationType?: 'fadeIn' | 'glow' | 'shootingStar' | 'rollingThunder';
+  animationType?: 'fadeIn' | 'glow' | 'shootingStar' | 'rollingThunder' | 'frenchFries';
   
   /** CSS class prefix for animation styles (default: 'animate-typing') */
   classPrefix?: string;
@@ -67,6 +67,9 @@ Characters appear with colorful particle effects like shooting star ice cream.
 ### rollingThunder
 Characters appear with fast rotation animation.
 
+### frenchFries
+Characters appear with golden rectangular particles rotating and flying out like french fries.
+
 ## Examples
 
 ### Basic Usage
@@ -82,11 +85,11 @@ const extensions = [
 
 ### Custom Configuration
 ```typescript
-// Shooting star animation with custom duration
+// French fries animation with custom duration
 const extensions = [
   basicSetup,
   animateTyping({
-    animationType: 'shootingStar',
+    animationType: 'frenchFries',
     duration: 800
   })
 ];
@@ -98,7 +101,7 @@ const extensions = [
 const codeEditor = new EditorView({
   extensions: [
     basicSetup,
-    animateTyping({ animationType: 'rollingThunder' })
+    animateTyping({ animationType: 'frenchFries' })
   ],
   parent: document.getElementById('code-editor')
 });
@@ -169,7 +172,7 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 
 ### v1.0.0
 - Initial release
-- Support for fadeIn, glow, shootingStar, and rollingThunder animations
+- Support for fadeIn, glow, shootingStar, rollingThunder, and frenchFries animations
 - Configurable duration and animation types
 - TypeScript support
 
