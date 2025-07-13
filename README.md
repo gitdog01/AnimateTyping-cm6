@@ -5,9 +5,10 @@
 [![license](https://img.shields.io/npm/l/animate-typing-cm6.svg)](https://github.com/gitdog01/AnimateTyping-cm6/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/gitdog01/AnimateTyping-cm6.svg)](https://github.com/gitdog01/AnimateTyping-cm6)
 
-https://github.com/user-attachments/assets/1b6fd463-a65e-45bc-b5b9-26d9258aa132
+![demo_1](https://github.com/user-attachments/assets/706d451b-e9cc-4ddd-bd4c-30dd241ef978)
 
-https://github.com/user-attachments/assets/0f7895b2-d9a8-4c57-8766-a6e62c4094b0
+![demo_2](https://github.com/user-attachments/assets/99358b52-85fd-4c1d-8762-3183c68d3c91)
+
 
 A CodeMirror 6 extension that adds beautiful typing animations to enhance the coding experience.
 
