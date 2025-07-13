@@ -25,8 +25,6 @@ A CodeMirror 6 extension that adds beautiful typing animations to enhance the co
 npm install animate-typing-cm6
 ```
 
-**npm 패키지 페이지:** https://www.npmjs.com/package/animate-typing-cm6
-
 ## Quick Start
 
 ```typescript
