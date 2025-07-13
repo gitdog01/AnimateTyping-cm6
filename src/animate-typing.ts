@@ -116,6 +116,33 @@ export function animateTyping(options: AnimateTypingOptions = {}): Extension {
         display: 'inline-block',
         position: 'relative'
       },
+      '.animate-typing-bubble': {
+        animation: `bubble ${options.duration || 500}ms ease-out`,
+        display: 'inline-block',
+        position: 'relative'
+      },
+      '.animate-typing-bubble::before': {
+        content: '"🫧"',
+        position: 'absolute',
+        left: '50%',
+        top: '0',
+        transform: 'translateX(-50%)',
+        fontSize: '0.8em',
+        animation: `bubbleFloat1 ${options.duration || 500}ms ease-out forwards`,
+        pointerEvents: 'none',
+        textShadow: '20px 0 0 currentColor, -15px 0 0 currentColor'
+      },
+      '.animate-typing-bubble::after': {
+        content: '"🫧"',
+        position: 'absolute',
+        left: '30%',
+        top: '0',
+        transform: 'translateX(-50%)',
+        fontSize: '0.6em',
+        animation: `bubbleFloat2 ${options.duration || 500}ms ease-out forwards`,
+        pointerEvents: 'none',
+        textShadow: '30px 0 0 currentColor, -25px 0 0 currentColor, 10px 0 0 currentColor'
+      },
       '@keyframes fadeIn': {
         '0%': { opacity: '0' },
         '100%': { opacity: '1' }
@@ -208,6 +235,82 @@ export function animateTyping(options: AnimateTypingOptions = {}): Extension {
           opacity: '1',
           transform: 'translateY(0px) rotate(270deg) scale(1)',
           boxShadow: '0 0 0 rgba(255, 215, 0, 0), 0 0 0 rgba(255, 165, 0, 0), 0 0 0 rgba(255, 140, 0, 0), 0 0 0 rgba(218, 165, 32, 0), 0 0 0 rgba(255, 193, 37, 0), 0 0 0 rgba(255, 127, 80, 0), 0 0 0 rgba(255, 185, 15, 0), 0 0 0 rgba(255, 160, 122, 0)'
+        }
+      },
+      '@keyframes bubble': {
+        '0%': { opacity: '0' },
+        '100%': { opacity: '1' }
+      },
+      '@keyframes bubbleFloat1': {
+        '0%': { 
+          opacity: '0',
+          transform: 'translateX(-50%) translateY(0px) scale(0.5)',
+        },
+        '20%': { 
+          opacity: '1',
+          transform: 'translateX(-30%) translateY(-15px) scale(0.8)',
+        },
+        '60%': { 
+          opacity: '0.8',
+          transform: 'translateX(-70%) translateY(-35px) scale(1.2)',
+        },
+        '100%': { 
+          opacity: '0',
+          transform: 'translateX(-10%) translateY(-50px) scale(0.6)',
+        }
+      },
+      '@keyframes bubbleFloat2': {
+        '0%': { 
+          opacity: '0',
+          transform: 'translateX(-50%) translateY(0px) scale(0.3)',
+        },
+        '30%': { 
+          opacity: '1',
+          transform: 'translateX(-80%) translateY(-20px) scale(0.6)',
+        },
+        '70%': { 
+          opacity: '0.6',
+          transform: 'translateX(-20%) translateY(-40px) scale(1.0)',
+        },
+        '100%': { 
+          opacity: '0',
+          transform: 'translateX(-90%) translateY(-60px) scale(0.4)',
+        }
+      },
+      '@keyframes bubbleFloat3': {
+        '0%': { 
+          opacity: '0',
+          transform: 'translateX(-50%) translateY(0px) scale(0.4)',
+        },
+        '25%': { 
+          opacity: '1',
+          transform: 'translateX(-10%) translateY(-25px) scale(0.9)',
+        },
+        '65%': { 
+          opacity: '0.7',
+          transform: 'translateX(-120%) translateY(-45px) scale(1.1)',
+        },
+        '100%': { 
+          opacity: '0',
+          transform: 'translateX(-150%) translateY(-70px) scale(0.3)',
+        }
+      },
+      '@keyframes bubbleFloat4': {
+        '0%': { 
+          opacity: '0',
+          transform: 'translateX(-50%) translateY(0px) scale(0.2)',
+        },
+        '35%': { 
+          opacity: '1',
+          transform: 'translateX(20%) translateY(-18px) scale(0.7)',
+        },
+        '75%': { 
+          opacity: '0.5',
+          transform: 'translateX(80%) translateY(-42px) scale(1.3)',
+        },
+        '100%': { 
+          opacity: '0',
+          transform: 'translateX(120%) translateY(-65px) scale(0.5)',
         }
       }
     })

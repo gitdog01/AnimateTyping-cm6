@@ -4,7 +4,7 @@ A CodeMirror 6 extension that adds beautiful typing animations to enhance the co
 
 ## Features
 
-- 🎨 **Multiple Animation Types**: Choose from fadeIn, glow, shootingStar, rollingThunder, and frenchFries effects
+- 🎨 **Multiple Animation Types**: Choose from fadeIn, glow, shootingStar, rollingThunder, frenchFries, and bubble effects
 - ⚡ **Lightweight**: Minimal performance impact
 - 🔧 **Configurable**: Customize animation duration and style
 - 🎯 **Smart Detection**: Only animates newly typed characters
@@ -43,7 +43,7 @@ interface AnimateTypingOptions {
   duration?: number;
   
   /** Type of animation to use (default: 'fadeIn') */
-  animationType?: 'fadeIn' | 'glow' | 'shootingStar' | 'rollingThunder' | 'frenchFries';
+  animationType?: 'fadeIn' | 'glow' | 'shootingStar' | 'rollingThunder' | 'frenchFries' | 'bubble';
   
   /** CSS class prefix for animation styles (default: 'animate-typing') */
   classPrefix?: string;
@@ -70,6 +70,9 @@ Characters appear with fast rotation animation.
 ### frenchFries
 Characters appear with golden rectangular particles rotating and flying out like french fries.
 
+### bubble
+Characters appear with soap bubble effects floating upward with gentle swaying motion.
+
 ## Examples
 
 ### Basic Usage
@@ -85,11 +88,11 @@ const extensions = [
 
 ### Custom Configuration
 ```typescript
-// French fries animation with custom duration
+// Bubble animation with custom duration
 const extensions = [
   basicSetup,
   animateTyping({
-    animationType: 'frenchFries',
+    animationType: 'bubble',
     duration: 800
   })
 ];
@@ -101,7 +104,7 @@ const extensions = [
 const codeEditor = new EditorView({
   extensions: [
     basicSetup,
-    animateTyping({ animationType: 'frenchFries' })
+    animateTyping({ animationType: 'bubble' })
   ],
   parent: document.getElementById('code-editor')
 });
@@ -109,7 +112,7 @@ const codeEditor = new EditorView({
 const notesEditor = new EditorView({
   extensions: [
     basicSetup,
-    animateTyping({ animationType: 'shootingStar', duration: 300 })
+    animateTyping({ animationType: 'frenchFries', duration: 300 })
   ],
   parent: document.getElementById('notes-editor')
 });
@@ -172,7 +175,7 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 
 ### v1.0.0
 - Initial release
-- Support for fadeIn, glow, shootingStar, rollingThunder, and frenchFries animations
+- Support for fadeIn, glow, shootingStar, rollingThunder, frenchFries, and bubble animations
 - Configurable duration and animation types
 - TypeScript support
 

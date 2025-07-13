@@ -25,7 +25,8 @@ const animationTypes: AnimateTypingOptions['animationType'][] = [
   'glow',
   'shootingStar',
   'rollingThunder',
-  'frenchFries'
+  'frenchFries',
+  'bubble'
 ]
 
 
@@ -128,6 +129,7 @@ function App() {
             <li><code>shootingStar</code>: Colorful particle effects</li>
             <li><code>rollingThunder</code>: Fast rotation</li>
             <li><code>frenchFries</code>: Golden rectangular particles</li>
+            <li><code>bubble</code>: Soap bubble effects</li>
           </ul>
         </div>
 
