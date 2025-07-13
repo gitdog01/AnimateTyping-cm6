@@ -1,5 +1,9 @@
 # AnimateTyping-cm6 🎯
 
+https://github.com/user-attachments/assets/1b6fd463-a65e-45bc-b5b9-26d9258aa132
+
+https://github.com/user-attachments/assets/0f7895b2-d9a8-4c57-8766-a6e62c4094b0
+
 A CodeMirror 6 extension that adds beautiful typing animations to enhance the coding experience.
 
 ## Features
