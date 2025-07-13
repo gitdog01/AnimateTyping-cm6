@@ -21,12 +21,12 @@ const languages: Language[] = [
 ]
 
 const animationTypes: AnimateTypingOptions['animationType'][] = [
-  'fadeIn',
-  'glow',
   'shootingStar',
   'rollingThunder',
   'frenchFries',
-  'bubble'
+  'bubble',
+  'fadeIn',
+  'glow'
 ]
 
 
