@@ -1,0 +1,47 @@
+# Development files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Development directories
+node_modules/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts (keep only dist/)
+tsconfig.json
+tsconfig.*.json
+
+# Example directory (not needed in npm package)
+example/
+
+# Git files
+.git/
+.gitignore
+.github/
+
+# Testing
+test/
+tests/
+*.test.*
+*.spec.*
+
+# Documentation source
+docs/
+.docs/
+
+# Configuration files
+.eslintrc*
+.prettierrc*
+.editorconfig
+.nvmrc
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+.github/ 

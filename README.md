@@ -1,5 +1,10 @@
 # AnimateTyping-cm6 🎯
 
+[![npm version](https://img.shields.io/npm/v/animate-typing-cm6.svg)](https://www.npmjs.com/package/animate-typing-cm6)
+[![npm downloads](https://img.shields.io/npm/dm/animate-typing-cm6.svg)](https://www.npmjs.com/package/animate-typing-cm6)
+[![license](https://img.shields.io/npm/l/animate-typing-cm6.svg)](https://github.com/gitdog01/AnimateTyping-cm6/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/gitdog01/AnimateTyping-cm6.svg)](https://github.com/gitdog01/AnimateTyping-cm6)
+
 https://github.com/user-attachments/assets/1b6fd463-a65e-45bc-b5b9-26d9258aa132
 
 https://github.com/user-attachments/assets/0f7895b2-d9a8-4c57-8766-a6e62c4094b0
@@ -19,6 +24,8 @@ A CodeMirror 6 extension that adds beautiful typing animations to enhance the co
 ```bash
 npm install animate-typing-cm6
 ```
+
+**npm 패키지 페이지:** https://www.npmjs.com/package/animate-typing-cm6
 
 ## Quick Start
 
@@ -175,14 +182,3 @@ This plugin supports all modern browsers that support CodeMirror 6:
 
 MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Changelog
-
-### v1.0.0
-- Initial release
-- Support for fadeIn, glow, shootingStar, rollingThunder, frenchFries, and bubble animations
-- Configurable duration and animation types
-- TypeScript support
-
----
-
-Made with ❤️ for the CodeMirror community

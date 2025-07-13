@@ -21,8 +21,16 @@
     "editor",
     "extension"
   ],
-  "author": "Your Name",
+  "author": "gitdog01",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitdog01/AnimateTyping-cm6.git"
+  },
+  "homepage": "https://github.com/gitdog01/AnimateTyping-cm6",
+  "bugs": {
+    "url": "https://github.com/gitdog01/AnimateTyping-cm6/issues"
+  },
   "devDependencies": {
     "typescript": "^5.0.0"
   },
