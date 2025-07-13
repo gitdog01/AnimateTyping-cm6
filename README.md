@@ -25,6 +25,18 @@ A CodeMirror 6 extension that adds beautiful typing animations to enhance the co
 npm install animate-typing-cm6
 ```
 
+## Links
+
+### 📦 NPM Package
+- **Package Name**: `animate-typing-cm6`
+- **NPM URL**: https://www.npmjs.com/package/animate-typing-cm6
+- **Installation Command**: `npm install animate-typing-cm6`
+
+### 🔗 GitHub Repository
+- **GitHub URL**: https://github.com/gitdog01/AnimateTyping-cm6
+- **Issues**: https://github.com/gitdog01/AnimateTyping-cm6/issues
+- **Pull Requests**: https://github.com/gitdog01/AnimateTyping-cm6/pulls
+
 ## Quick Start
 
 ```typescript
@@ -129,7 +141,34 @@ const notesEditor = new EditorView({
 
 ## Demo
 
-Open `example/index.html` in your browser to see the plugin in action!
+### Running the Example
+
+To run the demo from the example directory:
+
+```bash
+# Clone the project
+git clone https://github.com/gitdog01/AnimateTyping-cm6.git
+cd AnimateTyping-cm6
+
+# Install main package dependencies and build
+npm install
+npm run build
+
+# Navigate to example directory and install dependencies
+cd example
+npm install
+
+# Start development server
+npm run dev
+```
+
+Or run everything at once from the root directory:
+
+```bash
+npm run example
+```
+
+Open your browser and navigate to `http://localhost:5173` to see the plugin in action!
 
 ## Development
 
