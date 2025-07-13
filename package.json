@@ -1,6 +1,6 @@
 {
   "name": "animate-typing-cm6",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CodeMirror 6 extension that adds typing animations",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -44,4 +44,4 @@
     "README.md",
     "LICENSE"
   ]
-} 
+}
